@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Unit Converter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">
+            <h1>Unit Converter</h1>
+            <span class="unit-icon"><i class="fa-solid fa-calculator"></i></span>
+        </div>
+
+        <!-- <div>
+            <select id="conversion-type">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="area">Area</option>
+                <option value="time">Time</option>
+            </select>
+            <input type="number" id="input-field" placeholder="Enter value">
+            <button onclick="convert()">Convert</button>
+        </div> -->
+        <div class="main">
+            <select id="conversion-type">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="area">Area</option>
+                <option value="time">Time</option>
+            </select>
+            <input type="number" id="input-field" placeholder="Enter value">
+            <div id="conversion-fields">
+                <label for="from-unit">From:</label>
+                <p><select id="from-unit"></select>
+
+
+                    <label for="to-unit">To:</label>
+                    <select id="to-unit"></select>
+                </p>
+            </div>
+            <div class="convert"> <button onclick="convert()" class="new">Convert</button></div>
+
+        </div>
+
+        <table id="result-table"></table>
+        <div class="button">
+            <button onclick="clearFields()">All Clear</button>
+        </div>
+    </div>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
